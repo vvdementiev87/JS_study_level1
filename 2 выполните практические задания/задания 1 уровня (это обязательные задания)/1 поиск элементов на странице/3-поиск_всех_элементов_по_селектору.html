@@ -29,7 +29,10 @@
     и выведите их в консоль. -->
 
     <script>
-
+        'use strict';
+        let parentClass = document.querySelector('.card-body');
+        let childClass = parentClass.querySelectorAll('.card-link');
+        console.log(childClass);
     </script>
 </body>
 
