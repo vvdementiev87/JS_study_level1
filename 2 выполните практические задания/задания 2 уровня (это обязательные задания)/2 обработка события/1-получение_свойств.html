@@ -16,5 +16,16 @@
     4. При клике из event.target выведите в консоль: id, имя класса (используйте
     свойство className), текст на кнопке.
     -->
+<script>
+    'use strict';
+    let btnEl=document.getElementById('one');
+    function outConsole(){
+        console.log(this.id);  
+        console.log(this.className);
+        console.log(this.textContent);     
+    };
+    btnEl.addEventListener('click',outConsole);
+</script>
+
 </body>
 </html>
