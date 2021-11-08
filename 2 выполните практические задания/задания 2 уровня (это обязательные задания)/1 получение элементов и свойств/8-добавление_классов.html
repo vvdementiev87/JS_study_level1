@@ -19,7 +19,15 @@
     -->
 
     <script>
-        
+        'use strict';
+        let bEl=document.getElementsByTagName('b');
+         for (let element of bEl){
+             console.log(element.classList);
+             if (!element.classList.contains('sign')){
+                element.classList.add('sign');
+             };
+         };
+
     </script>
 </body>
 </html>

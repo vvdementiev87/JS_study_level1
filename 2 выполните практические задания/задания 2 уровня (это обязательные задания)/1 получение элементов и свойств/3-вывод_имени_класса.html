@@ -18,7 +18,14 @@
     -->
 
     <script>
-        
+      'use strict';
+      let classEl = document.getElementsByTagName('h2');
+      /* console.log(classEl);
+      for (let i=0; i<classEl.length; console.log(classEl[i++].className)){}; */
+        for (let El of classEl){
+            console.log(El.className);
+        }
+
     </script>
 </body>
 </html>
